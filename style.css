@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+}
+/* For Chrome, Safari, and Edge */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: orange; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: darkorange; /* Color when hovering over the thumb */
+}
+
+/* For Firefox */
+* {
+    scrollbar-width: thin; /* Make the scrollbar thinner */
+    scrollbar-color: orange #f1f1f1; /* Thumb color and track color */
+}
+
+
+nav{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid rgba(0, 0, 0,0.1);
+    justify-content: space-around;
+}
+
+nav img{
+    margin-left: 100px;
+}
+
+.home a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    padding-left: 20px;
+}
+
+.home a:hover{
+    color: rgba(237, 198, 0, 0.724);
+}
+
+.icos{
+    display: flex;
+    justify-content: center;
+}
+
+.icos i{
+    padding-left: 7px;
+}
+
+.icos img{
+    position: absolute;
+    right: 109px;
+    top: 24px;
+}
+
+.container {
+    display: flex;
+}
+  
+.homeleft, .homeright {
+    height: 100vh;
+    width: 50%;
+}
+
+.heding{
+    position: absolute;
+    top: 250px;
+    left: 200px;
+    width: 250px;
+}
+
+.heding h1{
+    font-size:xx-large;
+    font-weight: 700;
+}
+
+.heding a{
+    font-family: Kalam;
+    color: orange;
+    font-size:xx-large;
+    font-weight: 700;
+}
+
+.lorem{
+    position: absolute;
+    left: 200px;
+    top: 340px;
+    height: 200px;
+    width: 500px;
+    text-align: justify;
+}
+
+.button{
+    position: absolute;
+    top: 510px;
+    left: 200px;
+}
+
+.button button{
+    padding: 10px;
+    background-color: orange;
+    border: none;
+    border-radius: 7px;
+    font-size: large;
+    font-weight: 600;
+    color: white;
+}
+
+.button button:hover{
+    font-size: x-large;
+    transition-duration: 0.5s;
+}
+
+#homeright{
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#homeright img{
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    left: 70px;
+    top: 70px;
+}
+
+.secondpage{
+    display: flex;
+    height: 100vh;
+    z-index: 1;
+}
+
+.leftcontent{
+    width: 50%;
+    z-index: 100;
+}
+
+.leftcontent img{
+    width: 800px;
+
+}
+
+.rightcontent{
+    width: 50%;
+    z-index: 100;
+}
+
+.rightcontent .aboutus {
+    position: absolute;
+    font-family: Kalam;
+    top: 130vh;
+    color: black;
+    font-size: x-large;
+    width: 700px; /* Consistent width for the whole section */
+}
+
+.rightcontent .aboutus a {
+    font-family: kalam;
+    color: orange;
+    text-decoration: none; /* Removes underline from links */
+}
+
+.rightcontent .aboutus h5 {
+    margin-top: 50px;
+    font-size: larger;
+    color: black;
+}
+
+.rightcontent .aboutus p {
+    margin-top: 20px; /* Adjusted for better spacing after the heading */
+    font-size: medium;
+    color: black;
+    width: 100%; /* Takes full width of parent */
+    text-align: justify;
+}
+
+.rightcontent .aboutus button {
+    margin-top: 20px; /* More natural space between content */
+    padding: 10px 20px;
+    background-color: orange;
+    border: none;
+    border-radius: 7px;
+    font-size: large;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.rightcontent .aboutus button:hover {
+    background-color: darkorange; /* Button hover effect */
+}
+
+
+.thirdpage {
+    display: flex;
+    flex-wrap: wrap; /* Containers will wrap to new lines */
+    justify-content: center; /* Center align the containers */
+    height: 100vh;
+    padding: 20px; /* Adds padding around the page */
+    position: relative; /* Required for absolute positioning of the heading */
+}
+
+.thirdpage .thidheading {
+    position: absolute;
+    left: 45%;
+    top: 0;
+}
+
+.thirdpage .thidheading h1 {
+    color: black;
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+.thirdpage .thidheading a {
+    font-family: Kalam;
+    color: orange;
+    font-size: xx-large;
+    font-weight: 700;
+    border-bottom: 2px solid orange;
+}
+
+.thirdcontent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Space between the containers */
+    width: 100%; /* Full width of the parent container */
+    padding: 20px;
+}
+
+.menuone {
+    height: 330px;
+    width: 250px;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 10px; /* Adds spacing between containers */
+    border-radius: 7px; /* Makes corners rounded */
+    overflow: hidden;
+    /* background-color: aliceblue; Set a consistent background color */
+
+}
+
+.menuone img {
+    width: 100%;
+    height: 160px; /* Adjusted height for the image */
+    object-fit: cover; /* Ensures the image covers the area */
+}
+
+.menuone .img:hover img {
+    width: 100%; /* Full width of the container */
+    height: 170px; /* Ensure units are specified for height */
+    transition: height 0.5s ease; /* Smooth transition effect */
+    overflow: hidden;
+}
+
+.menuone:hover img {
+    transform: scale(1.2); /* Zoom effect on hover */
+}
+
+.menuone h5 {
+    font-family: Kalam;
+    color: orange;
+    font-size: large;
+    text-align: center; /* Center aligns the text */
+}
+
+.menuone p {
+    width: 220px;
+    text-align: justify;
+    font-weight: 500;
+    margin: 0 auto; /* Center the paragraph */
+}
+
+.menuone h3 {
+    text-align: center; /* Centers the h3 */
+    padding-top: 5px;
+}
+
+.menuone span {
+    /* display: block; */
+    /* text-align: center; Centers the span element */
+    padding-top: 10px;
+}
+
+.menuone span:nth-child(5){
+    padding-left: 70px;
+}
+
+.menuone button {
+    display: block;
+    margin: 10px auto;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+.checked {
+    color: orange;
+}
+
+.fourpage{
+    height: 100vh;
+}
+
+.fourpage .fourheading{
+    position: absolute;
+    left: 45%;
+}
+
+.fourpage .fourheading a{
+    font-family: kalam;
+    color: orange;
+}
+
+.fourpage .fourcontent {
+    display: flex;
+    flex-wrap: wrap; /* Wrap the containers to multiple lines */
+    justify-content: space-around; /* Evenly space the containers */
+    padding: 20px;
+}
+
+.fourpage .fourcontent .menus {
+    height: 300px;
+    flex-basis: calc(33% - 40px);
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden; /* Ensures content stays inside the container */
+}
+
+.fourpage .fourcontent .menus img {
+    width: 100%; /* Ensures the image takes full width of the container */
+    height: 100%; /* Ensures the image takes full height of the container */
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+}
+
+.fivepage{
+    height: 100vh;
+}
+
+.fivepage .fiveheading h1{
+    position: absolute;
+    left: 40%;
+}
+
+
+.fivepage .fiveheading a{
+    font-family: Kalam;
+    color: orange;
+}
+
+.fivepage .fivecontent {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping of containers if needed */
+    justify-content: center; /* Centers the containers horizontally */
+    padding: 20px; /* Adds some padding around */
+}
+
+.fivepage .fivecontent .five {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 300px; /* Width of each container */
+    height: 550px; /* Height of each container */
+    border: 2px solid black;
+    margin: 10px; /* Adds space around each container */
+    margin-top: 50px; /* Adds additional space above each container */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for depth */
+}
+
+.fivepage .fivecontent .five .img {
+    position: relative;
+    width: 180px; /* Width of the image container */
+    height: 180px; /* Height of the image container */
+    margin-top: 7px;
+    overflow: hidden; /* Hides overflow content if any */
+}
+
+.fivepage .fivecontent .five .img img {
+    padding: 5px;
+    width: 90%; /* Makes the image full width of the container */
+    height: 90%; /* Keeps the height responsive to maintain aspect ratio */
+    border-radius: 50%; /* Makes the image circular */
+    background-size: cover; /* Ensures the image covers the container */
+    border: 3px solid black;
+}
+
+.fivepage .fivecontent .five .fcontent{
+    position: absolute;
+    top: 200px;
+    width: 250px;
+}
+
+.fivepage .fivecontent .five .fcontent h2{
+    position: relative;
+    left: 60px;
+}
+
+.fivepage .fivecontent .five .fcontent span{
+    position: relative;
+    left: 60px;
+}
+
+.p{
+    position: relative;
+    left: 5px;
+    margin-top: 10px;
+    text-align: justify;
+}
